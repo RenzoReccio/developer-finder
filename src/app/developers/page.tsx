@@ -78,7 +78,6 @@ export default function Home() {
 
     return (
         <main className="min-h-screen flex flex-col">
-            <Header />
 
             <div className="container mx-auto px-4 py-6">
 
@@ -122,7 +121,6 @@ export default function Home() {
             </div>
 
             <div className="mt-auto">
-                <Footer />
             </div>
         </main>
     );

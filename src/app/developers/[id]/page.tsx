@@ -44,8 +44,7 @@ export default function DeveloperProfilePage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
-      
+
       <main className="flex-grow container mx-auto p-4 md:p-8">
         <div className="bg-white rounded-lg shadow-sm p-6">
           <div className="flex flex-col md:flex-row gap-6">
@@ -104,8 +103,6 @@ export default function DeveloperProfilePage() {
           </div>
         </div>
       </main>
-
-      <Footer />
 
       {showContactForm && (
         <ContactForm

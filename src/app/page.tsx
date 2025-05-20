@@ -1,25 +1,10 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-
-const inter = Inter({ subsets: ['latin'] });
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function HomePage() {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-        </div>
-      </body>
-    </html>
+    <section className="p-4">
+      <h1 className="text-3xl font-bold mb-4">Welcome to DevFinder</h1>
+      <p className="text-lg text-gray-600">
+        Find the best developers for your next big idea.
+      </p>
+    </section>
   );
 }
