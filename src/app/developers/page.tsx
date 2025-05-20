@@ -1,13 +1,10 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { fetchDevelopers } from '@/lib/api';
 import { DeveloperFilters, DeveloperType, Skill, PaginatedResponse, Developer } from '@/lib/types';
 import DeveloperList from '../components/DeveloperList';
 import FilterSidebar from '../components/FilterSidebar';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import Pagination from '../components/Pagination';
 
 export default function Home() {
@@ -87,7 +84,7 @@ export default function Home() {
                         <FilterSidebar
                             selectedSkills={filters.skills ?? []}
                             selectedType={filters.type ?? null}
-                            onFilterChange={(type, newSkills) => updateFilters({type, skills: newSkills})}
+                            onFilterChange={(type, newSkills) => updateFilters({ type, skills: newSkills })}
                         />
                     </div>
 

@@ -1,12 +1,9 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import { fetchDeveloperById } from '@/lib/api';
 import { Developer } from '@/lib/types';
 import ContactForm from '@/app/components/ContactForm';
-import Footer from '@/app/components/Footer';
-import Header from '@/app/components/Header';
 import LoadingSpinner from '@/app/components/LoadingSpinner';
 
 export default function DeveloperProfilePage() {
